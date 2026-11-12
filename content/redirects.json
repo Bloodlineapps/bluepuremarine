@@ -1,0 +1,914 @@
+[
+  {
+    "from": "/collections/exterieur/",
+    "to": "/onderhoud/exterieur/"
+  },
+  {
+    "from": "/collections/interieur/",
+    "to": "/onderhoud/interieur/"
+  },
+  {
+    "from": "/collections/onderhoudsmiddelen/",
+    "to": "/onderhoud/reinigingsproducten/"
+  },
+  {
+    "from": "/collections/onderhoud/",
+    "to": "/onderhoud/onderhoudsmiddelen/"
+  },
+  {
+    "from": "/collections/accessoires/",
+    "to": "/onderhoud/accessoires/"
+  },
+  {
+    "from": "/collections/ankers-en-lieren/",
+    "to": "/bootonderdelen/ankers-en-lieren/"
+  },
+  {
+    "from": "/collections/blokken/",
+    "to": "/bootonderdelen/blokken/"
+  },
+  {
+    "from": "/collections/biminis/",
+    "to": "/bootonderdelen/biminis/"
+  },
+  {
+    "from": "/collections/boegschroeven/",
+    "to": "/bootonderdelen/boegschroeven/"
+  },
+  {
+    "from": "/collections/gashendels/",
+    "to": "/bootonderdelen/motorbedieningen/"
+  },
+  {
+    "from": "/collections/pompen/",
+    "to": "/bootonderdelen/waterpompen/"
+  },
+  {
+    "from": "/collections/navigatie-en-elektronica/",
+    "to": "/navigatie-elektronica/"
+  },
+  {
+    "from": "/collections/watersport-accessoires/",
+    "to": "/watersport/accessoires/"
+  },
+  {
+    "from": "/collections/boten-1/",
+    "to": "/watersport/boten/"
+  },
+  {
+    "from": "/collections/5-liters-deal/",
+    "to": "/pakketten/5-liter-deals/"
+  },
+  {
+    "from": "/collections/alles-in-1-pakket/",
+    "to": "/pakketten/alles-in-1-pakket/"
+  },
+  {
+    "from": "/collections/exterior-pakket/",
+    "to": "/pakketten/exterior-pakket/"
+  },
+  {
+    "from": "/collections/bestrijdingspakket/",
+    "to": "/pakketten/bestrijdingspakket/"
+  },
+  {
+    "from": "/collections/frontpage/",
+    "to": "/bestsellers/"
+  },
+  {
+    "from": "/collections/all/",
+    "to": "/bootonderdelen/"
+  },
+  {
+    "from": "/collections/",
+    "to": "/bootonderdelen/"
+  },
+  {
+    "from": "/products/antal-00305-mini-drievoudig-blok-34-mm-met-harpsluiting/",
+    "to": "/producten/antal-00305-mini-drievoudig-blok-34-mm-met-harpsluiting/"
+  },
+  {
+    "from": "/collections/blokken/products/antal-00305-mini-drievoudig-blok-34-mm-met-harpsluiting/",
+    "to": "/producten/antal-00305-mini-drievoudig-blok-34-mm-met-harpsluiting/"
+  },
+  {
+    "from": "/products/antal-00306-drievoudig-blok-34-mm-met-harpsluiting-en-becket/",
+    "to": "/producten/antal-00306-drievoudig-blok-34-mm-met-harpsluiting-en-becket/"
+  },
+  {
+    "from": "/collections/blokken/products/antal-00306-drievoudig-blok-34-mm-met-harpsluiting-en-becket/",
+    "to": "/producten/antal-00306-drievoudig-blok-34-mm-met-harpsluiting-en-becket/"
+  },
+  {
+    "from": "/products/bimini-decktent-l-wit-opblaasbare-zonwering-voor-je-boot/",
+    "to": "/producten/bimini-decktent-l-wit-opblaasbare-zonwering-voor-je-boot/"
+  },
+  {
+    "from": "/collections/biminis/products/bimini-decktent-l-wit-opblaasbare-zonwering-voor-je-boot/",
+    "to": "/producten/bimini-decktent-l-wit-opblaasbare-zonwering-voor-je-boot/"
+  },
+  {
+    "from": "/products/bimini-decktent-m-wit-opblaasbare-zonwering-voor-je-boot/",
+    "to": "/producten/bimini-decktent-m-wit-opblaasbare-zonwering-voor-je-boot/"
+  },
+  {
+    "from": "/collections/biminis/products/bimini-decktent-m-wit-opblaasbare-zonwering-voor-je-boot/",
+    "to": "/producten/bimini-decktent-m-wit-opblaasbare-zonwering-voor-je-boot/"
+  },
+  {
+    "from": "/products/bimini-decktent-s-wit-opblaasbare-zonwering-voor-je-boot/",
+    "to": "/producten/bimini-decktent-s-wit-opblaasbare-zonwering-voor-je-boot/"
+  },
+  {
+    "from": "/collections/biminis/products/bimini-decktent-s-wit-opblaasbare-zonwering-voor-je-boot/",
+    "to": "/producten/bimini-decktent-s-wit-opblaasbare-zonwering-voor-je-boot/"
+  },
+  {
+    "from": "/products/bimini-decktent-s-zwart-opblaasbare-zonwering-voor-je-boot/",
+    "to": "/producten/bimini-decktent-s-zwart-opblaasbare-zonwering-voor-je-boot/"
+  },
+  {
+    "from": "/collections/biminis/products/bimini-decktent-s-zwart-opblaasbare-zonwering-voor-je-boot/",
+    "to": "/producten/bimini-decktent-s-zwart-opblaasbare-zonwering-voor-je-boot/"
+  },
+  {
+    "from": "/products/bimini-decktent-s-wit-opblaasbare-zonwering-voor-je-boot-1/",
+    "to": "/producten/bimini-decktent-s-wit-opblaasbare-zonwering-voor-je-boot-1/"
+  },
+  {
+    "from": "/collections/biminis/products/bimini-decktent-s-wit-opblaasbare-zonwering-voor-je-boot-1/",
+    "to": "/producten/bimini-decktent-s-wit-opblaasbare-zonwering-voor-je-boot-1/"
+  },
+  {
+    "from": "/products/bimini-decktent-xs-opblaasbare-zonwering-voor-je-boot/",
+    "to": "/producten/bimini-decktent-xs-opblaasbare-zonwering-voor-je-boot/"
+  },
+  {
+    "from": "/collections/biminis/products/bimini-decktent-xs-opblaasbare-zonwering-voor-je-boot/",
+    "to": "/producten/bimini-decktent-xs-opblaasbare-zonwering-voor-je-boot/"
+  },
+  {
+    "from": "/products/bimini-decktent-xs-zwart-opblaasbare-zonwering-voor-je-boot/",
+    "to": "/producten/bimini-decktent-xs-zwart-opblaasbare-zonwering-voor-je-boot/"
+  },
+  {
+    "from": "/collections/biminis/products/bimini-decktent-xs-zwart-opblaasbare-zonwering-voor-je-boot/",
+    "to": "/producten/bimini-decktent-xs-zwart-opblaasbare-zonwering-voor-je-boot/"
+  },
+  {
+    "from": "/products/bluepure-dry-towel/",
+    "to": "/producten/bluepure-dry-towel/"
+  },
+  {
+    "from": "/collections/accessoires/products/bluepure-dry-towel/",
+    "to": "/producten/bluepure-dry-towel/"
+  },
+  {
+    "from": "/collections/exterieur/products/bluepure-dry-towel/",
+    "to": "/producten/bluepure-dry-towel/"
+  },
+  {
+    "from": "/products/bluepure-hand-brush/",
+    "to": "/producten/bluepure-hand-brush/"
+  },
+  {
+    "from": "/collections/accessoires/products/bluepure-hand-brush/",
+    "to": "/producten/bluepure-hand-brush/"
+  },
+  {
+    "from": "/collections/interieur/products/bluepure-hand-brush/",
+    "to": "/producten/bluepure-hand-brush/"
+  },
+  {
+    "from": "/products/bluepure-interior-microvezel-doek-5stuks/",
+    "to": "/producten/bluepure-interior-microvezel-doek-5stuks/"
+  },
+  {
+    "from": "/collections/accessoires/products/bluepure-interior-microvezel-doek-5stuks/",
+    "to": "/producten/bluepure-interior-microvezel-doek-5stuks/"
+  },
+  {
+    "from": "/collections/interieur/products/bluepure-interior-microvezel-doek-5stuks/",
+    "to": "/producten/bluepure-interior-microvezel-doek-5stuks/"
+  },
+  {
+    "from": "/products/bluepure-scrubbing-brush/",
+    "to": "/producten/bluepure-scrubbing-brush/"
+  },
+  {
+    "from": "/collections/accessoires/products/bluepure-scrubbing-brush/",
+    "to": "/producten/bluepure-scrubbing-brush/"
+  },
+  {
+    "from": "/collections/exterieur/products/bluepure-scrubbing-brush/",
+    "to": "/producten/bluepure-scrubbing-brush/"
+  },
+  {
+    "from": "/products/bow-thruster-35-kgf-12-v-125-mm-tunnel/",
+    "to": "/producten/bow-thruster-35-kgf-12-v-125-mm-tunnel/"
+  },
+  {
+    "from": "/collections/boegschroeven/products/bow-thruster-35-kgf-12-v-125-mm-tunnel/",
+    "to": "/producten/bow-thruster-35-kgf-12-v-125-mm-tunnel/"
+  },
+  {
+    "from": "/products/bow-thruster-55-kgf-12-v-150-mm-tunnel/",
+    "to": "/producten/bow-thruster-55-kgf-12-v-150-mm-tunnel/"
+  },
+  {
+    "from": "/collections/boegschroeven/products/bow-thruster-55-kgf-12-v-150-mm-tunnel/",
+    "to": "/producten/bow-thruster-55-kgf-12-v-150-mm-tunnel/"
+  },
+  {
+    "from": "/products/bow-thruster-65-kgf-12-v-185-mm-tunnel/",
+    "to": "/producten/bow-thruster-65-kgf-12-v-185-mm-tunnel/"
+  },
+  {
+    "from": "/collections/boegschroeven/products/bow-thruster-65-kgf-12-v-185-mm-tunnel/",
+    "to": "/producten/bow-thruster-65-kgf-12-v-185-mm-tunnel/"
+  },
+  {
+    "from": "/products/bruce-anker-20-kg-rvs-316/",
+    "to": "/producten/bruce-anker-20-kg-rvs-316/"
+  },
+  {
+    "from": "/collections/ankers-en-lieren/products/bruce-anker-20-kg-rvs-316/",
+    "to": "/producten/bruce-anker-20-kg-rvs-316/"
+  },
+  {
+    "from": "/products/danforth-anker-8-kg-gegalvaniseerd-staal/",
+    "to": "/producten/danforth-anker-8-kg-gegalvaniseerd-staal/"
+  },
+  {
+    "from": "/collections/ankers-en-lieren/products/danforth-anker-8-kg-gegalvaniseerd-staal/",
+    "to": "/producten/danforth-anker-8-kg-gegalvaniseerd-staal/"
+  },
+  {
+    "from": "/products/decktent-dog-ramp-meer-waterplezier-voor-jouw-hond/",
+    "to": "/producten/decktent-dog-ramp-meer-waterplezier-voor-jouw-hond/"
+  },
+  {
+    "from": "/collections/watersport-accessoires/products/decktent-dog-ramp-meer-waterplezier-voor-jouw-hond/",
+    "to": "/producten/decktent-dog-ramp-meer-waterplezier-voor-jouw-hond/"
+  },
+  {
+    "from": "/products/decktent-dog-ramp-meer-waterplezier-voor-jouw-hond-maat-m/",
+    "to": "/producten/decktent-dog-ramp-meer-waterplezier-voor-jouw-hond-maat-m/"
+  },
+  {
+    "from": "/collections/watersport-accessoires/products/decktent-dog-ramp-meer-waterplezier-voor-jouw-hond-maat-m/",
+    "to": "/producten/decktent-dog-ramp-meer-waterplezier-voor-jouw-hond-maat-m/"
+  },
+  {
+    "from": "/products/decktent-opblaasbaar-platform-amp-sup-jouw-eigen-plek-op-het-water/",
+    "to": "/producten/decktent-opblaasbaar-platform-amp-sup-jouw-eigen-plek-op-het-water/"
+  },
+  {
+    "from": "/collections/watersport-accessoires/products/decktent-opblaasbaar-platform-amp-sup-jouw-eigen-plek-op-het-water/",
+    "to": "/producten/decktent-opblaasbaar-platform-amp-sup-jouw-eigen-plek-op-het-water/"
+  },
+  {
+    "from": "/products/decktent-opblaasbaar-platform-250-150-cm-jouw-eigen-plek-op-het-water/",
+    "to": "/producten/decktent-opblaasbaar-platform-250-150-cm-jouw-eigen-plek-op-het-water/"
+  },
+  {
+    "from": "/collections/watersport-accessoires/products/decktent-opblaasbaar-platform-250-150-cm-jouw-eigen-plek-op-het-water/",
+    "to": "/producten/decktent-opblaasbaar-platform-250-150-cm-jouw-eigen-plek-op-het-water/"
+  },
+  {
+    "from": "/products/decktent-opblaasbaar-platform-300-200-cm-jouw-terras-op-het-water/",
+    "to": "/producten/decktent-opblaasbaar-platform-300-200-cm-jouw-terras-op-het-water/"
+  },
+  {
+    "from": "/collections/watersport-accessoires/products/decktent-opblaasbaar-platform-300-200-cm-jouw-terras-op-het-water/",
+    "to": "/producten/decktent-opblaasbaar-platform-300-200-cm-jouw-terras-op-het-water/"
+  },
+  {
+    "from": "/products/decktent-sup-met-houtlook-stijlvol-het-water-op-maat-m/",
+    "to": "/producten/decktent-sup-met-houtlook-stijlvol-het-water-op-maat-m/"
+  },
+  {
+    "from": "/collections/watersport-accessoires/products/decktent-sup-met-houtlook-stijlvol-het-water-op-maat-m/",
+    "to": "/producten/decktent-sup-met-houtlook-stijlvol-het-water-op-maat-m/"
+  },
+  {
+    "from": "/products/decktent-sup-met-houtlook-stijl-en-waterplezier-in-een-maat-xl/",
+    "to": "/producten/decktent-sup-met-houtlook-stijl-en-waterplezier-in-een-maat-xl/"
+  },
+  {
+    "from": "/collections/watersport-accessoires/products/decktent-sup-met-houtlook-stijl-en-waterplezier-in-een-maat-xl/",
+    "to": "/producten/decktent-sup-met-houtlook-stijl-en-waterplezier-in-een-maat-xl/"
+  },
+  {
+    "from": "/products/decktent-water-lounge-jouw-eigen-oase-op-het-water/",
+    "to": "/producten/decktent-water-lounge-jouw-eigen-oase-op-het-water/"
+  },
+  {
+    "from": "/collections/watersport-accessoires/products/decktent-water-lounge-jouw-eigen-oase-op-het-water/",
+    "to": "/producten/decktent-water-lounge-jouw-eigen-oase-op-het-water/"
+  },
+  {
+    "from": "/products/decktent-water-lounge-rond-ontspannen-op-het-water/",
+    "to": "/producten/decktent-water-lounge-rond-ontspannen-op-het-water/"
+  },
+  {
+    "from": "/collections/watersport-accessoires/products/decktent-water-lounge-rond-ontspannen-op-het-water/",
+    "to": "/producten/decktent-water-lounge-rond-ontspannen-op-het-water/"
+  },
+  {
+    "from": "/products/desinfectie/",
+    "to": "/producten/desinfectie/"
+  },
+  {
+    "from": "/collections/interieur/products/desinfectie/",
+    "to": "/producten/desinfectie/"
+  },
+  {
+    "from": "/collections/onderhoudsmiddelen/products/desinfectie/",
+    "to": "/producten/desinfectie/"
+  },
+  {
+    "from": "/products/desinfectie-exterior-cleaner-mold-remover/",
+    "to": "/producten/desinfectie-exterior-cleaner-mold-remover/"
+  },
+  {
+    "from": "/collections/bestrijdingspakket/products/desinfectie-exterior-cleaner-mold-remover/",
+    "to": "/producten/desinfectie-exterior-cleaner-mold-remover/"
+  },
+  {
+    "from": "/products/ecstasea®-solar-relingverlichting-set-van-4-voor-relingen-o-25-mm/",
+    "to": "/producten/ecstasea-solar-relingverlichting-set-van-4-voor-relingen-o-25-mm/"
+  },
+  {
+    "from": "/products/ecstasea%c2%ae-solar-relingverlichting-set-van-4-voor-relingen-o-25-mm/",
+    "to": "/producten/ecstasea-solar-relingverlichting-set-van-4-voor-relingen-o-25-mm/"
+  },
+  {
+    "from": "/collections/watersport-accessoires/products/ecstasea®-solar-relingverlichting-set-van-4-voor-relingen-o-25-mm/",
+    "to": "/producten/ecstasea-solar-relingverlichting-set-van-4-voor-relingen-o-25-mm/"
+  },
+  {
+    "from": "/products/exterior-cleaner-1/",
+    "to": "/producten/exterior-cleaner-1/"
+  },
+  {
+    "from": "/collections/exterieur/products/exterior-cleaner-1/",
+    "to": "/producten/exterior-cleaner-1/"
+  },
+  {
+    "from": "/collections/onderhoudsmiddelen/products/exterior-cleaner-1/",
+    "to": "/producten/exterior-cleaner-1/"
+  },
+  {
+    "from": "/products/exterior-cleaner-5liter-1/",
+    "to": "/producten/exterior-cleaner-5liter-1/"
+  },
+  {
+    "from": "/collections/5-liters-deal/products/exterior-cleaner-5liter-1/",
+    "to": "/producten/exterior-cleaner-5liter-1/"
+  },
+  {
+    "from": "/products/exterior-cleaner-interior-cleaner-oil-remover/",
+    "to": "/producten/exterior-cleaner-interior-cleaner-oil-remover/"
+  },
+  {
+    "from": "/collections/alles-in-1-pakket/products/exterior-cleaner-interior-cleaner-oil-remover/",
+    "to": "/producten/exterior-cleaner-interior-cleaner-oil-remover/"
+  },
+  {
+    "from": "/products/exterior-cleaner/",
+    "to": "/producten/exterior-cleaner/"
+  },
+  {
+    "from": "/collections/frontpage/products/exterior-cleaner/",
+    "to": "/producten/exterior-cleaner/"
+  },
+  {
+    "from": "/collections/exterieur/products/exterior-cleaner/",
+    "to": "/producten/exterior-cleaner/"
+  },
+  {
+    "from": "/collections/onderhoud/products/exterior-cleaner/",
+    "to": "/producten/exterior-cleaner/"
+  },
+  {
+    "from": "/collections/onderhoudsmiddelen/products/exterior-cleaner/",
+    "to": "/producten/exterior-cleaner/"
+  },
+  {
+    "from": "/products/exterior-cleaner-5liter/",
+    "to": "/producten/exterior-cleaner-5liter/"
+  },
+  {
+    "from": "/collections/5-liters-deal/products/exterior-cleaner-5liter/",
+    "to": "/producten/exterior-cleaner-5liter/"
+  },
+  {
+    "from": "/products/formentera-opblaasboot-met-transparante-bodem-maat-l/",
+    "to": "/producten/formentera-opblaasboot-met-transparante-bodem-maat-l/"
+  },
+  {
+    "from": "/collections/boten-1/products/formentera-opblaasboot-met-transparante-bodem-maat-l/",
+    "to": "/producten/formentera-opblaasboot-met-transparante-bodem-maat-l/"
+  },
+  {
+    "from": "/products/formentera-opblaasboot-met-transparante-bodem/",
+    "to": "/producten/formentera-opblaasboot-met-transparante-bodem/"
+  },
+  {
+    "from": "/collections/boten-1/products/formentera-opblaasboot-met-transparante-bodem/",
+    "to": "/producten/formentera-opblaasboot-met-transparante-bodem/"
+  },
+  {
+    "from": "/products/formentera-opblaasboot-met-transparante-bodem-maat-xl/",
+    "to": "/producten/formentera-opblaasboot-met-transparante-bodem-maat-xl/"
+  },
+  {
+    "from": "/collections/boten-1/products/formentera-opblaasboot-met-transparante-bodem-maat-xl/",
+    "to": "/producten/formentera-opblaasboot-met-transparante-bodem-maat-xl/"
+  },
+  {
+    "from": "/products/furuno-ds-830-digitale-snelheidsindicator-voor-ds-830-doppler-speed-log-2dekans-product/",
+    "to": "/producten/furuno-ds-830-digitale-snelheidsindicator-voor-ds-830-doppler-speed-log-2dekans-product/"
+  },
+  {
+    "from": "/collections/navigatie-en-elektronica/products/furuno-ds-830-digitale-snelheidsindicator-voor-ds-830-doppler-speed-log-2dekans-product/",
+    "to": "/producten/furuno-ds-830-digitale-snelheidsindicator-voor-ds-830-doppler-speed-log-2dekans-product/"
+  },
+  {
+    "from": "/products/furuno-gpa-018-gps-dgps-antenna-with-cable-marine-navigation-antenna/",
+    "to": "/producten/furuno-gpa-018-gps-dgps-antenna-with-cable-marine-navigation-antenna/"
+  },
+  {
+    "from": "/collections/navigatie-en-elektronica/products/furuno-gpa-018-gps-dgps-antenna-with-cable-marine-navigation-antenna/",
+    "to": "/producten/furuno-gpa-018-gps-dgps-antenna-with-cable-marine-navigation-antenna/"
+  },
+  {
+    "from": "/products/furuno-gps-navigator-maritiem-navigatiedisplay-met-montagebeugel/",
+    "to": "/producten/furuno-gps-navigator-maritiem-navigatiedisplay-met-montagebeugel/"
+  },
+  {
+    "from": "/collections/navigatie-en-elektronica/products/furuno-gps-navigator-maritiem-navigatiedisplay-met-montagebeugel/",
+    "to": "/producten/furuno-gps-navigator-maritiem-navigatiedisplay-met-montagebeugel/"
+  },
+  {
+    "from": "/products/garmin-gpsmap-923xsv-kaartplotter-gmr-18-hd3-koepelradar-9-inch-12-24-v/",
+    "to": "/producten/garmin-gpsmap-923xsv-kaartplotter-gmr-18-hd3-koepelradar-9-inch-12-24-v/"
+  },
+  {
+    "from": "/collections/navigatie-en-elektronica/products/garmin-gpsmap-923xsv-kaartplotter-gmr-18-hd3-koepelradar-9-inch-12-24-v/",
+    "to": "/producten/garmin-gpsmap-923xsv-kaartplotter-gmr-18-hd3-koepelradar-9-inch-12-24-v/"
+  },
+  {
+    "from": "/products/glass-cleaner/",
+    "to": "/producten/glass-cleaner/"
+  },
+  {
+    "from": "/collections/exterieur/products/glass-cleaner/",
+    "to": "/producten/glass-cleaner/"
+  },
+  {
+    "from": "/collections/interieur/products/glass-cleaner/",
+    "to": "/producten/glass-cleaner/"
+  },
+  {
+    "from": "/collections/onderhoudsmiddelen/products/glass-cleaner/",
+    "to": "/producten/glass-cleaner/"
+  },
+  {
+    "from": "/products/harken-129-38-mm-big-bullet-drievoudig-blok/",
+    "to": "/producten/harken-129-38-mm-big-bullet-drievoudig-blok/"
+  },
+  {
+    "from": "/collections/blokken/products/harken-129-38-mm-big-bullet-drievoudig-blok/",
+    "to": "/producten/harken-129-38-mm-big-bullet-drievoudig-blok/"
+  },
+  {
+    "from": "/products/harken-1516-midrange-enkel-overloop-eindblok/",
+    "to": "/producten/harken-1516-midrange-enkel-overloop-eindblok/"
+  },
+  {
+    "from": "/collections/blokken/products/harken-1516-midrange-enkel-overloop-eindblok/",
+    "to": "/producten/harken-1516-midrange-enkel-overloop-eindblok/"
+  },
+  {
+    "from": "/products/harken-2727-small-boat-cb-kogelgelagerde-overloopwagen-met-scharnierende-sluiting/",
+    "to": "/producten/harken-2727-small-boat-cb-kogelgelagerde-overloopwagen-met-scharnierende-sluiting/"
+  },
+  {
+    "from": "/collections/blokken/products/harken-2727-small-boat-cb-kogelgelagerde-overloopwagen-met-scharnierende-sluiting/",
+    "to": "/producten/harken-2727-small-boat-cb-kogelgelagerde-overloopwagen-met-scharnierende-sluiting/"
+  },
+  {
+    "from": "/products/harken-3047-aluminium-high-load-teardrop-blok-75-mm/",
+    "to": "/producten/harken-3047-aluminium-high-load-teardrop-blok-75-mm/"
+  },
+  {
+    "from": "/collections/blokken/products/harken-3047-aluminium-high-load-teardrop-blok-75-mm/",
+    "to": "/producten/harken-3047-aluminium-high-load-teardrop-blok-75-mm/"
+  },
+  {
+    "from": "/products/57mm-aluminum-esp-footblock/",
+    "to": "/producten/57mm-aluminum-esp-footblock/"
+  },
+  {
+    "from": "/collections/blokken/products/57mm-aluminum-esp-footblock/",
+    "to": "/producten/57mm-aluminum-esp-footblock/"
+  },
+  {
+    "from": "/products/harken-57mm-esp-blok-hk6095/",
+    "to": "/producten/harken-57mm-esp-blok-hk6095/"
+  },
+  {
+    "from": "/collections/blokken/products/harken-57mm-esp-blok-hk6095/",
+    "to": "/producten/harken-57mm-esp-blok-hk6095/"
+  },
+  {
+    "from": "/products/harken-e2750-dubbele-eindblokkenset-voor-27-mm-overlooprail/",
+    "to": "/producten/harken-e2750-dubbele-eindblokkenset-voor-27-mm-overlooprail/"
+  },
+  {
+    "from": "/collections/blokken/products/harken-e2750-dubbele-eindblokkenset-voor-27-mm-overlooprail/",
+    "to": "/producten/harken-e2750-dubbele-eindblokkenset-voor-27-mm-overlooprail/"
+  },
+  {
+    "from": "/products/harken-g326s-big-boat-32-mm-genuaslede-met-borgpen-en-schootblok/",
+    "to": "/producten/harken-g326s-big-boat-32-mm-genuaslede-met-borgpen-en-schootblok/"
+  },
+  {
+    "from": "/collections/blokken/products/harken-g326s-big-boat-32-mm-genuaslede-met-borgpen-en-schootblok/",
+    "to": "/producten/harken-g326s-big-boat-32-mm-genuaslede-met-borgpen-en-schootblok/"
+  },
+  {
+    "from": "/products/harken-small-boat-genua-slider-block-32-mm-genuablok-voor-zeilboten/",
+    "to": "/producten/harken-small-boat-genua-slider-block-32-mm-genuablok-voor-zeilboten/"
+  },
+  {
+    "from": "/collections/blokken/products/harken-small-boat-genua-slider-block-32-mm-genuablok-voor-zeilboten/",
+    "to": "/producten/harken-small-boat-genua-slider-block-32-mm-genuablok-voor-zeilboten/"
+  },
+  {
+    "from": "/products/interior-cleaner/",
+    "to": "/producten/interior-cleaner/"
+  },
+  {
+    "from": "/collections/frontpage/products/interior-cleaner/",
+    "to": "/producten/interior-cleaner/"
+  },
+  {
+    "from": "/collections/interieur/products/interior-cleaner/",
+    "to": "/producten/interior-cleaner/"
+  },
+  {
+    "from": "/collections/onderhoud/products/interior-cleaner/",
+    "to": "/producten/interior-cleaner/"
+  },
+  {
+    "from": "/collections/onderhoudsmiddelen/products/interior-cleaner/",
+    "to": "/producten/interior-cleaner/"
+  },
+  {
+    "from": "/products/interior-cleaner-5liter/",
+    "to": "/producten/interior-cleaner-5liter/"
+  },
+  {
+    "from": "/collections/5-liters-deal/products/interior-cleaner-5liter/",
+    "to": "/producten/interior-cleaner-5liter/"
+  },
+  {
+    "from": "/products/jabsco-par-max-3-drinkwaterpomp-11-l-min-12-v-of-24-v/",
+    "to": "/producten/jabsco-par-max-3-drinkwaterpomp-11-l-min-12-v-of-24-v/"
+  },
+  {
+    "from": "/collections/pompen/products/jabsco-par-max-3-drinkwaterpomp-11-l-min-12-v-of-24-v/",
+    "to": "/producten/jabsco-par-max-3-drinkwaterpomp-11-l-min-12-v-of-24-v/"
+  },
+  {
+    "from": "/products/johnson-pump-aqua-jet-wps-2-4-automatische-drinkwaterpomp-9-l-min/",
+    "to": "/producten/johnson-pump-aqua-jet-wps-2-4-automatische-drinkwaterpomp-9-l-min/"
+  },
+  {
+    "from": "/collections/pompen/products/johnson-pump-aqua-jet-wps-2-4-automatische-drinkwaterpomp-9-l-min/",
+    "to": "/producten/johnson-pump-aqua-jet-wps-2-4-automatische-drinkwaterpomp-9-l-min/"
+  },
+  {
+    "from": "/products/johnson-pump-aqua-jet-wps-2-9-automatische-drinkwaterpomp-11-l-min/",
+    "to": "/producten/johnson-pump-aqua-jet-wps-2-9-automatische-drinkwaterpomp-11-l-min/"
+  },
+  {
+    "from": "/collections/pompen/products/johnson-pump-aqua-jet-wps-2-9-automatische-drinkwaterpomp-11-l-min/",
+    "to": "/producten/johnson-pump-aqua-jet-wps-2-9-automatische-drinkwaterpomp-11-l-min/"
+  },
+  {
+    "from": "/products/lewmar-control-drieschijfsblok-met-harpsluiting/",
+    "to": "/producten/lewmar-control-drieschijfsblok-met-harpsluiting/"
+  },
+  {
+    "from": "/collections/blokken/products/lewmar-control-drieschijfsblok-met-harpsluiting/",
+    "to": "/producten/lewmar-control-drieschijfsblok-met-harpsluiting/"
+  },
+  {
+    "from": "/products/lewmar-control-drievoudig-blok-40-mm-voor-lijnen-tot-10-mm-29901423bk/",
+    "to": "/producten/lewmar-control-drievoudig-blok-40-mm-voor-lijnen-tot-10-mm-29901423bk/"
+  },
+  {
+    "from": "/collections/blokken/products/lewmar-control-drievoudig-blok-40-mm-voor-lijnen-tot-10-mm-29901423bk/",
+    "to": "/producten/lewmar-control-drievoudig-blok-40-mm-voor-lijnen-tot-10-mm-29901423bk/"
+  },
+  {
+    "from": "/products/lewmar-htx-60-mm-dubbelblok-met-hondsvot-gecontroleerde-zeilbediening-29196005/",
+    "to": "/producten/lewmar-htx-60-mm-dubbelblok-met-hondsvot-gecontroleerde-zeilbediening-29196005/"
+  },
+  {
+    "from": "/collections/blokken/products/lewmar-htx-60-mm-dubbelblok-met-hondsvot-gecontroleerde-zeilbediening-29196005/",
+    "to": "/producten/lewmar-htx-60-mm-dubbelblok-met-hondsvot-gecontroleerde-zeilbediening-29196005/"
+  },
+  {
+    "from": "/products/lewmar-htx-t1-genuaslede-bakboord-met-borgpen-291214537/",
+    "to": "/producten/lewmar-htx-t1-genuaslede-bakboord-met-borgpen-291214537/"
+  },
+  {
+    "from": "/collections/blokken/products/lewmar-htx-t1-genuaslede-bakboord-met-borgpen-291214537/",
+    "to": "/producten/lewmar-htx-t1-genuaslede-bakboord-met-borgpen-291214537/"
+  },
+  {
+    "from": "/products/maxwell-p102816-hrc8-elektrische-ankerlier-8-mm-24-v/",
+    "to": "/producten/maxwell-p102816-hrc8-elektrische-ankerlier-8-mm-24-v/"
+  },
+  {
+    "from": "/collections/ankers-en-lieren/products/maxwell-p102816-hrc8-elektrische-ankerlier-8-mm-24-v/",
+    "to": "/producten/maxwell-p102816-hrc8-elektrische-ankerlier-8-mm-24-v/"
+  },
+  {
+    "from": "/products/mercury-8m0133245-next-gen-triple-premier-electronic-remote-control-set/",
+    "to": "/producten/mercury-8m0133245-next-gen-triple-premier-electronic-remote-control-set/"
+  },
+  {
+    "from": "/collections/gashendels/products/mercury-8m0133245-next-gen-triple-premier-electronic-remote-control-set/",
+    "to": "/producten/mercury-8m0133245-next-gen-triple-premier-electronic-remote-control-set/"
+  },
+  {
+    "from": "/products/mercury-dts-slim-console-single-trim-elektronische-motorbediening-8m0079291/",
+    "to": "/producten/mercury-dts-slim-console-single-trim-elektronische-motorbediening-8m0079291/"
+  },
+  {
+    "from": "/collections/gashendels/products/mercury-dts-slim-console-single-trim-elektronische-motorbediening-8m0079291/",
+    "to": "/producten/mercury-dts-slim-console-single-trim-elektronische-motorbediening-8m0079291/"
+  },
+  {
+    "from": "/products/mercury-marine-clean-power-kabelboom-4-57-meter-8m0150523/",
+    "to": "/producten/mercury-marine-clean-power-kabelboom-4-57-meter-8m0150523/"
+  },
+  {
+    "from": "/collections/navigatie-en-elektronica/products/mercury-marine-clean-power-kabelboom-4-57-meter-8m0150523/",
+    "to": "/producten/mercury-marine-clean-power-kabelboom-4-57-meter-8m0150523/"
+  },
+  {
+    "from": "/products/mold-remover/",
+    "to": "/producten/mold-remover/"
+  },
+  {
+    "from": "/collections/frontpage/products/mold-remover/",
+    "to": "/producten/mold-remover/"
+  },
+  {
+    "from": "/collections/interieur/products/mold-remover/",
+    "to": "/producten/mold-remover/"
+  },
+  {
+    "from": "/collections/onderhoudsmiddelen/products/mold-remover/",
+    "to": "/producten/mold-remover/"
+  },
+  {
+    "from": "/products/navico-windsensorkabel-20-meter-micro-c-naar-simnet-000-10757-001/",
+    "to": "/producten/navico-windsensorkabel-20-meter-micro-c-naar-simnet-000-10757-001/"
+  },
+  {
+    "from": "/collections/navigatie-en-elektronica/products/navico-windsensorkabel-20-meter-micro-c-naar-simnet-000-10757-001/",
+    "to": "/producten/navico-windsensorkabel-20-meter-micro-c-naar-simnet-000-10757-001/"
+  },
+  {
+    "from": "/products/oil-remover/",
+    "to": "/producten/oil-remover/"
+  },
+  {
+    "from": "/collections/frontpage/products/oil-remover/",
+    "to": "/producten/oil-remover/"
+  },
+  {
+    "from": "/collections/interieur/products/oil-remover/",
+    "to": "/producten/oil-remover/"
+  },
+  {
+    "from": "/collections/onderhoud/products/oil-remover/",
+    "to": "/producten/oil-remover/"
+  },
+  {
+    "from": "/collections/onderhoudsmiddelen/products/oil-remover/",
+    "to": "/producten/oil-remover/"
+  },
+  {
+    "from": "/products/oil-remover-5liter/",
+    "to": "/producten/oil-remover-5liter/"
+  },
+  {
+    "from": "/collections/5-liters-deal/products/oil-remover-5liter/",
+    "to": "/producten/oil-remover-5liter/"
+  },
+  {
+    "from": "/products/poolanker-20-kg-gepolijst-rvs-316/",
+    "to": "/producten/poolanker-20-kg-gepolijst-rvs-316/"
+  },
+  {
+    "from": "/collections/ankers-en-lieren/products/poolanker-20-kg-gepolijst-rvs-316/",
+    "to": "/producten/poolanker-20-kg-gepolijst-rvs-316/"
+  },
+  {
+    "from": "/products/propeller-cleaner/",
+    "to": "/producten/propeller-cleaner/"
+  },
+  {
+    "from": "/collections/frontpage/products/propeller-cleaner/",
+    "to": "/producten/propeller-cleaner/"
+  },
+  {
+    "from": "/collections/exterieur/products/propeller-cleaner/",
+    "to": "/producten/propeller-cleaner/"
+  },
+  {
+    "from": "/collections/onderhoud/products/propeller-cleaner/",
+    "to": "/producten/propeller-cleaner/"
+  },
+  {
+    "from": "/collections/onderhoudsmiddelen/products/propeller-cleaner/",
+    "to": "/producten/propeller-cleaner/"
+  },
+  {
+    "from": "/products/propeller-cleaner-5liter/",
+    "to": "/producten/propeller-cleaner-5liter/"
+  },
+  {
+    "from": "/collections/5-liters-deal/products/propeller-cleaner-5liter/",
+    "to": "/producten/propeller-cleaner-5liter/"
+  },
+  {
+    "from": "/products/propeller-cleaner-exterior-cleaner-exterior-cleaner/",
+    "to": "/producten/propeller-cleaner-exterior-cleaner-exterior-cleaner/"
+  },
+  {
+    "from": "/collections/exterior-pakket/products/propeller-cleaner-exterior-cleaner-exterior-cleaner/",
+    "to": "/producten/propeller-cleaner-exterior-cleaner-exterior-cleaner/"
+  },
+  {
+    "from": "/products/quick-boegschroef-btq-125-12volt-30kgf-1-5kw/",
+    "to": "/producten/quick-boegschroef-btq-125-12volt-30kgf-1-5kw/"
+  },
+  {
+    "from": "/collections/boegschroeven/products/quick-boegschroef-btq-125-12volt-30kgf-1-5kw/",
+    "to": "/producten/quick-boegschroef-btq-125-12volt-30kgf-1-5kw/"
+  },
+  {
+    "from": "/products/quick-btq-110-25-boegschroef-25-kgf-12-v-110-mm/",
+    "to": "/producten/quick-btq-110-25-boegschroef-25-kgf-12-v-110-mm/"
+  },
+  {
+    "from": "/collections/boegschroeven/products/quick-btq-110-25-boegschroef-25-kgf-12-v-110-mm/",
+    "to": "/producten/quick-btq-110-25-boegschroef-25-kgf-12-v-110-mm/"
+  },
+  {
+    "from": "/products/radio-zeeland-falcon-f501-maritiem-bedieningspaneel-met-stuurhendel/",
+    "to": "/producten/radio-zeeland-falcon-f501-maritiem-bedieningspaneel-met-stuurhendel/"
+  },
+  {
+    "from": "/collections/navigatie-en-elektronica/products/radio-zeeland-falcon-f501-maritiem-bedieningspaneel-met-stuurhendel/",
+    "to": "/producten/radio-zeeland-falcon-f501-maritiem-bedieningspaneel-met-stuurhendel/"
+  },
+  {
+    "from": "/products/sailor-ap4365-zwart-gmdss-alarmpaneel-24-v-dc/",
+    "to": "/producten/sailor-ap4365-zwart-gmdss-alarmpaneel-24-v-dc/"
+  },
+  {
+    "from": "/collections/navigatie-en-elektronica/products/sailor-ap4365-zwart-gmdss-alarmpaneel-24-v-dc/",
+    "to": "/producten/sailor-ap4365-zwart-gmdss-alarmpaneel-24-v-dc/"
+  },
+  {
+    "from": "/products/side-power-8960g-joystick-bedieningspaneel-voor-boegschroef-12-24-v/",
+    "to": "/producten/side-power-8960g-joystick-bedieningspaneel-voor-boegschroef-12-24-v/"
+  },
+  {
+    "from": "/collections/gashendels/products/side-power-8960g-joystick-bedieningspaneel-voor-boegschroef-12-24-v/",
+    "to": "/producten/side-power-8960g-joystick-bedieningspaneel-voor-boegschroef-12-24-v/"
+  },
+  {
+    "from": "/products/ultraflex-b89-eenhendel-gas-en-schakelbediening-voor-boten/",
+    "to": "/producten/ultraflex-b89-eenhendel-gas-en-schakelbediening-voor-boten/"
+  },
+  {
+    "from": "/collections/gashendels/products/ultraflex-b89-eenhendel-gas-en-schakelbediening-voor-boten/",
+    "to": "/producten/ultraflex-b89-eenhendel-gas-en-schakelbediening-voor-boten/"
+  },
+  {
+    "from": "/products/vetus-bedieningshendel-rvs-voor-12-24-v/",
+    "to": "/producten/vetus-bedieningshendel-rvs-voor-12-24-v/"
+  },
+  {
+    "from": "/collections/gashendels/products/vetus-bedieningshendel-rvs-voor-12-24-v/",
+    "to": "/producten/vetus-bedieningshendel-rvs-voor-12-24-v/"
+  },
+  {
+    "from": "/products/vetus-dbppja-proportioneel-joystickpaneel-voor-boeg-en-hekschroef/",
+    "to": "/producten/vetus-dbppja-proportioneel-joystickpaneel-voor-boeg-en-hekschroef/"
+  },
+  {
+    "from": "/collections/gashendels/products/vetus-dbppja-proportioneel-joystickpaneel-voor-boeg-en-hekschroef/",
+    "to": "/producten/vetus-dbppja-proportioneel-joystickpaneel-voor-boeg-en-hekschroef/"
+  },
+  {
+    "from": "/products/vetus-set0159-elektromotor-12-v-met-solenoide-voor-bow95-bow125/",
+    "to": "/producten/vetus-set0159-elektromotor-12-v-met-solenoide-voor-bow95-bow125/"
+  },
+  {
+    "from": "/collections/boegschroeven/products/vetus-set0159-elektromotor-12-v-met-solenoide-voor-bow95-bow125/",
+    "to": "/producten/vetus-set0159-elektromotor-12-v-met-solenoide-voor-bow95-bow125/"
+  },
+  {
+    "from": "/products/volvo-penta-elektronische-motorbediening-voor-ips-met-single-lever-functie/",
+    "to": "/producten/volvo-penta-elektronische-motorbediening-voor-ips-met-single-lever-functie/"
+  },
+  {
+    "from": "/collections/gashendels/products/volvo-penta-elektronische-motorbediening-voor-ips-met-single-lever-functie/",
+    "to": "/producten/volvo-penta-elektronische-motorbediening-voor-ips-met-single-lever-functie/"
+  },
+  {
+    "from": "/products/volvo-penta-garmin-glass-cockpit-7-inch-mfd-12-24-v-inclusief-montagekit-23989003/",
+    "to": "/producten/volvo-penta-garmin-glass-cockpit-7-inch-mfd-12-24-v-inclusief-montagekit-23989003/"
+  },
+  {
+    "from": "/collections/navigatie-en-elektronica/products/volvo-penta-garmin-glass-cockpit-7-inch-mfd-12-24-v-inclusief-montagekit-23989003/",
+    "to": "/producten/volvo-penta-garmin-glass-cockpit-7-inch-mfd-12-24-v-inclusief-montagekit-23989003/"
+  },
+  {
+    "from": "/pages/contact/",
+    "to": "/contact/"
+  },
+  {
+    "from": "/pages/klantenservice/",
+    "to": "/klantenservice/"
+  },
+  {
+    "from": "/pages/veelgestelde-vragen/",
+    "to": "/veelgestelde-vragen/"
+  },
+  {
+    "from": "/pages/verzending/",
+    "to": "/verzending/"
+  },
+  {
+    "from": "/pages/retourbeleid/",
+    "to": "/retourbeleid/"
+  },
+  {
+    "from": "/pages/hoe-wij-de-bestellingen-en-contact-verwerken/",
+    "to": "/hoe-wij-de-bestellingen-en-contact-verwerken/"
+  },
+  {
+    "from": "/policies/privacy-policy/",
+    "to": "/privacy/"
+  },
+  {
+    "from": "/policies/terms-of-service/",
+    "to": "/algemene-voorwaarden/"
+  },
+  {
+    "from": "/policies/refund-policy/",
+    "to": "/retourbeleid/"
+  },
+  {
+    "from": "/policies/shipping-policy/",
+    "to": "/verzending/"
+  },
+  {
+    "from": "/policies/legal-notice/",
+    "to": "/juridische-informatie/"
+  },
+  {
+    "from": "/policies/contact-information/",
+    "to": "/contact/"
+  },
+  {
+    "from": "/cart/",
+    "to": "/winkelwagen/"
+  },
+  {
+    "from": "/account/login/",
+    "to": "/account/inloggen/"
+  },
+  {
+    "from": "/account/register/",
+    "to": "/account/registreren/"
+  },
+  {
+    "from": "/search/",
+    "to": "/zoeken/"
+  }
+]

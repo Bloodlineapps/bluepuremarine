@@ -1,0 +1,17 @@
+node_modules
+.next
+.env
+prisma/*.db
+prisma/*.db-journal
+prisma/schema.postgres.prisma
+scripts/raw
+*.tsbuildinfo
+public/uploads/user
+.next-prod
+seo-report.json
+*.log
+.DS_Store
+/export/
+
+storage/
+build.log

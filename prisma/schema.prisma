@@ -1,0 +1,586 @@
+// Datamodel voor BluePure Marine (bluepuremarine.com): webshop + CMS. Lokaal SQLite; in productie PostgreSQL. Draai Prisma altijd via
+// `npm run prisma -- <commando>` (scripts/prisma.mjs): bij een postgres-DATABASE_URL wordt automatisch
+// prisma/schema.postgres.prisma gegenereerd en gebruikt. Pas alleen dit bestand aan.
+// Elke publieke URL staat letterlijk in een `path`-veld (met slash aan het eind). Nederlands staat in de root,
+// Engels onder /en/. Vertalingen van dezelfde pagina delen een `translationKey`.
+// Verwijderen is een zachte verwijdering (deletedAt): het item gaat 6 maanden naar de prullenbak.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ---------- beheer ----------
+
+/// Rollen in een eigen tabel: superadmin (alles), admin (alles incl. connecties), user (alles behalve connecties).
+model Role {
+  id    String @id @default(cuid())
+  key   String @unique
+  name  String
+  users User[]
+}
+
+model User {
+  id           String     @id @default(cuid())
+  email        String     @unique
+  name         String
+  passwordHash String
+  roleId       String
+  role         Role       @relation(fields: [roleId], references: [id])
+  lastLoginAt  DateTime?
+  createdAt    DateTime   @default(now())
+  logs         AuditLog[]
+}
+
+/// Logboek: wie heeft wat wanneer aangemaakt, gewijzigd of verwijderd.
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  userName  String
+  action    String
+  entity    String
+  entityId  String?
+  summary   String
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}
+
+/// Revisiegeschiedenis: na elke wijziging een volledige momentopname van het item (JSON).
+model Revision {
+  id        String   @id @default(cuid())
+  /// "page" | "faq" | "form"
+  entity    String
+  entityId  String
+  title     String
+  data      String
+  /// korte omschrijving van wat er veranderd is (velden)
+  changes   String   @default("")
+  userId    String?
+  userName  String
+  createdAt DateTime @default(now())
+
+  @@index([entity, entityId, createdAt])
+  @@index([createdAt])
+}
+
+/// Losse instellingen (organisatie, homepage, connecties, SEO) als JSON per sleutel.
+model Setting {
+  key       String   @id
+  value     String
+  updatedAt DateTime @updatedAt
+}
+
+model Media {
+  id        String   @id @default(cuid())
+  path      String   @unique
+  alt       String   @default("")
+  /// map in de mediabibliotheek, bv. "foto's" of "logo's"
+  folder    String   @default("")
+  width     Int?
+  height    Int?
+  size      Int?
+  createdAt DateTime @default(now())
+}
+
+model Redirect {
+  id        String   @id @default(cuid())
+  from      String   @unique
+  to        String
+  status    Int      @default(301)
+  hits      Int      @default(0)
+  createdAt DateTime @default(now())
+}
+
+// ---------- content ----------
+
+/// Alle pagina's (home, diensten, over ons, FAQ, contact, juridisch), per taal één rij.
+model Page {
+  id              String    @id @default(cuid())
+  path            String    @unique
+  /// "nl" | "en"
+  locale          String    @default("nl")
+  /// gedeelde sleutel van alle taalversies van deze pagina, bv. "executive-protection"
+  translationKey  String    @default("")
+  /// pad-sleutel van de bovenliggende pagina (voor kruimelpad en submenu's), bv. "specialised-security"
+  parentKey       String?
+  title           String
+  /// korte naam voor menu's, kruimelpad en kaarten, bv. "Persoonsbeveiliging" (leeg = titel)
+  navTitle        String    @default("")
+  /// korte inleiding onder de H1 (hero)
+  intro           String    @default("")
+  heroImage       String?
+  heroAlt         String    @default("")
+  /// knoptekst in de hero, bv. "Vraag een vertrouwelijke intake aan"
+  ctaLabel        String?
+  /// blokken-editor: [{ id, type, ... }] — zie src/lib/blocks.ts
+  blocks          String    @default("[]")
+  /// "home" | "hub" | "service" | "about" | "faq" | "contact" | "legal" | "default"
+  template        String    @default("default")
+  /// "home" | "diensten" | "over-ons" | "juridisch" | "overig"
+  section         String    @default("overig")
+  /// korte omschrijving voor overzichten en menu's
+  summary         String    @default("")
+  status          String    @default("published")
+  noindex         Boolean   @default(false)
+  /// concepttekst (nieuw geschreven, nog niet gecontroleerd)
+  isDraftCopy     Boolean   @default(false)
+  sortOrder       Int       @default(0)
+  metaTitle       String?
+  metaDescription String?
+  ogImage         String?
+  publishedAt     DateTime  @default(now())
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  deletedAt       DateTime?
+
+  @@index([translationKey, locale])
+  @@index([section, locale, status])
+}
+
+/// Veelgestelde vragen (beheer: /admin/faq/). Staan op de FAQ-pagina en als FAQPage in de structured data.
+model Faq {
+  id        String    @id @default(cuid())
+  locale    String    @default("nl")
+  question  String
+  answer    String
+  category  String    @default("Algemeen")
+  sortOrder Int       @default(0)
+  status    String    @default("published")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  @@index([locale, status, sortOrder])
+}
+
+/// 404-log: welke niet-bestaande URL's worden opgevraagd (beheer: /admin/redirects/).
+model NotFoundHit {
+  id       String   @id @default(cuid())
+  path     String   @unique
+  hits     Int      @default(1)
+  referrer String?
+  lastAt   DateTime @default(now())
+}
+
+// ---------- formulieren ----------
+
+/// Formulierbouwer: velden en stappen als JSON, met meldingen, bevestiging, webhook en vervolgactie.
+model Form {
+  id             String           @id @default(cuid())
+  /// vaste sleutel waarmee de site het formulier gebruikt, bv. "contact" of "contact-en"
+  key            String           @unique
+  name           String
+  description    String           @default("")
+  /// [{ id, title, fields: [{ id, type, label, placeholder, required, options, help, min, max, pattern }] }]
+  steps          String           @default("[]")
+  submitLabel    String           @default("Versturen")
+  /// e-mailadressen die bij elke inzending een melding krijgen
+  notifyEmails   String           @default("[]")
+  notifySubject  String           @default("Nieuwe inzending: {formulier}")
+  /// "message" | "redirect"
+  afterSubmit    String           @default("message")
+  successMessage String           @default("Bedankt! We nemen zo snel mogelijk contact met je op.")
+  redirectPath   String?
+  confirmEnabled Boolean          @default(false)
+  confirmSubject String           @default("We hebben je aanvraag ontvangen")
+  confirmText    String           @default("")
+  webhookUrl     String?
+  status         String           @default("published")
+  submissions    FormSubmission[]
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  deletedAt      DateTime?
+}
+
+model FormSubmission {
+  id        String   @id @default(cuid())
+  formId    String
+  form      Form     @relation(fields: [formId], references: [id], onDelete: Cascade)
+  /// { veld-id: waarde }
+  data      String
+  /// [{ field, name, path, size }]
+  files     String   @default("[]")
+  /// pagina waarop het formulier is ingevuld
+  sourcePath String?
+  read      Boolean  @default(false)
+  /// "verstuurd" | "niet ingesteld" | "mislukt"
+  mailStatus String  @default("niet ingesteld")
+  webhookStatus String?
+  createdAt DateTime @default(now())
+
+  @@index([formId, createdAt])
+}
+
+/// Verzendlog van alle e-mails via SparkPost.
+model MailLog {
+  id        String   @id @default(cuid())
+  to        String
+  subject   String
+  /// "verstuurd" | "gebounced" | "mislukt"
+  status    String
+  error     String?
+  providerId String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}
+
+// ---------- webshop ----------
+
+/// Merk (Harken, Vetus, BluePure Marine …). Publiek: /merken/<slug>/.
+model Brand {
+  id              String    @id @default(cuid())
+  slug            String    @unique
+  name            String
+  logo            String?
+  description     String    @default("")
+  metaTitle       String?
+  metaDescription String?
+  sortOrder       Int       @default(0)
+  products        Product[]
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+/// Productcategorie, maximaal twee niveaus: /onderhoud/ en /onderhoud/reinigingsproducten/.
+model Category {
+  id              String            @id @default(cuid())
+  /// volledige URL, bv. "/bootonderdelen/boegschroeven/"
+  path            String            @unique
+  slug            String
+  name            String
+  /// korte naam voor menu's (leeg = name)
+  navTitle        String            @default("")
+  parentId        String?
+  parent          Category?         @relation("CategoryTree", fields: [parentId], references: [id], onDelete: SetNull)
+  children        Category[]        @relation("CategoryTree")
+  /// kopje van de kolom in het megamenu, bv. "Aan dek" of "Per plek aan boord"
+  menuGroup       String            @default("")
+  /// korte inleiding boven de producten (platte tekst)
+  intro           String            @default("")
+  /// SEO-tekst onder de producten (HTML)
+  description     String            @default("")
+  image           String?
+  imageAlt        String            @default("")
+  /// oude Shopify-handle (/collections/<handle>), voor redirects en import
+  sourceHandle    String?
+  /// "deal"-categorieën krijgen een accentkleur in het menu
+  highlight       Boolean           @default(false)
+  sortOrder       Int               @default(0)
+  status          String            @default("published")
+  noindex         Boolean           @default(false)
+  metaTitle       String?
+  metaDescription String?
+  products        ProductCategory[]
+  primaryFor      Product[]         @relation("PrimaryCategory")
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  deletedAt       DateTime?
+
+  @@index([parentId, sortOrder])
+}
+
+/// Product. Publiek: /producten/<slug>/. Prijzen in centen, inclusief btw.
+model Product {
+  id                String            @id @default(cuid())
+  slug              String            @unique
+  /// altijd "/producten/<slug>/"
+  path              String            @unique
+  name              String
+  /// korte regel op kaarten en onder de titel, bv. "Romp- en dekreiniger voor de buitenkant van je boot"
+  subtitle          String            @default("")
+  /// inleiding naast de afbeeldingen (platte tekst)
+  lead              String            @default("")
+  /// uitgebreide omschrijving (HTML)
+  description       String            @default("")
+  /// extra uitklapblok "Gebruik en onderhoud" (HTML)
+  usage             String            @default("")
+  /// specificaties: [{ label, value }]
+  specs             String            @default("[]")
+  /// afbeeldingen: [{ src, alt, width, height }]; de eerste is de hoofdafbeelding
+  images            String            @default("[]")
+  /// productsoort, bv. "Reiniger" of "Boegschroef" (filter)
+  productType       String            @default("")
+  brandId           String?
+  brand             Brand?            @relation(fields: [brandId], references: [id], onDelete: SetNull)
+  primaryCategoryId String?
+  primaryCategory   Category?         @relation("PrimaryCategory", fields: [primaryCategoryId], references: [id], onDelete: SetNull)
+  categories        ProductCategory[]
+  /// prijs in centen incl. btw (bij varianten: de laagste variantprijs, automatisch bijgewerkt)
+  price             Int
+  /// "van"-prijs in centen (doorgestreept), optioneel
+  compareAtPrice    Int?
+  /// btw-percentage: 21, 9 of 0
+  vatRate           Int               @default(21)
+  sku               String?
+  ean               String?
+  /// voorraad (bij varianten: som van de varianten, automatisch bijgewerkt)
+  stock             Int               @default(0)
+  /// false = voorraad niet bijhouden (altijd leverbaar)
+  trackStock        Boolean           @default(true)
+  /// gewicht in gram (verzending)
+  weight            Int               @default(0)
+  /// levertijd-tekst, leeg = standaard uit de winkelinstellingen
+  deliveryNote      String            @default("")
+  /// namen van de variantopties, bv. ["Maat","Kleur"]
+  optionNames       String            @default("[]")
+  variants          Variant[]
+  reviews           Review[]
+  featured          Boolean           @default(false)
+  /// aantal keer verkocht (sortering op populariteit)
+  sold              Int               @default(0)
+  sortOrder         Int               @default(0)
+  status            String            @default("published")
+  noindex           Boolean           @default(false)
+  metaTitle         String?
+  metaDescription   String?
+  /// oude Shopify-handle (/products/<handle>)
+  sourceHandle      String?
+  publishedAt       DateTime          @default(now())
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+  deletedAt         DateTime?
+
+  @@index([status, deletedAt])
+  @@index([brandId])
+}
+
+model ProductCategory {
+  productId  String
+  categoryId String
+  /// volgorde binnen de categorie
+  position   Int      @default(0)
+  product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@id([productId, categoryId])
+  @@index([categoryId, position])
+}
+
+/// Variant (maat, kleur) met eigen prijs, voorraad en SKU.
+model Variant {
+  id             String  @id @default(cuid())
+  productId      String
+  product        Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  /// bv. "L / Wit"
+  name           String
+  /// waarden per optie, bv. ["L","Wit"]
+  options        String  @default("[]")
+  price          Int
+  compareAtPrice Int?
+  sku            String?
+  stock          Int     @default(0)
+  image          String?
+  sortOrder      Int     @default(0)
+
+  @@index([productId, sortOrder])
+}
+
+/// Productreview. Komt pas op de site na goedkeuring in het beheer (/admin/reviews/).
+model Review {
+  id        String   @id @default(cuid())
+  productId String?
+  product   Product? @relation(fields: [productId], references: [id], onDelete: SetNull)
+  name      String
+  email     String?
+  rating    Int
+  title     String   @default("")
+  text      String
+  /// "pending" | "approved" | "rejected"
+  status    String   @default("pending")
+  verified  Boolean  @default(false)
+  /// "site" (formulier) | "import" (overgenomen van de oude site)
+  source    String   @default("site")
+  date      DateTime @default(now())
+  createdAt DateTime @default(now())
+
+  @@index([status, date])
+  @@index([productId, status])
+}
+
+// ---------- klanten en bestellingen ----------
+
+model Customer {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  passwordHash String
+  firstName    String
+  lastName     String
+  phone        String    @default("")
+  newsletter   Boolean   @default(false)
+  addresses    Address[]
+  orders       Order[]
+  resetToken   String?
+  resetExpires DateTime?
+  lastLoginAt  DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+
+model Address {
+  id          String   @id @default(cuid())
+  customerId  String
+  customer    Customer @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  /// "shipping" | "billing"
+  type        String   @default("shipping")
+  firstName   String
+  lastName    String
+  company     String   @default("")
+  street      String
+  houseNumber String
+  addition    String   @default("")
+  postalCode  String
+  city        String
+  /// ISO-landcode: NL, BE, DE
+  country     String   @default("NL")
+  isDefault   Boolean  @default(false)
+  createdAt   DateTime @default(now())
+
+  @@index([customerId])
+}
+
+/// Bestelling. Bedragen in centen incl. btw. Adressen worden als momentopname (JSON) bewaard.
+model Order {
+  id              String      @id @default(cuid())
+  /// oplopend bestelnummer, bv. "BP-10001"
+  number          String      @unique
+  /// geheime sleutel voor de bedankpagina /bestelling/?t=<token>
+  token           String      @unique
+  customerId      String?
+  customer        Customer?   @relation(fields: [customerId], references: [id], onDelete: SetNull)
+  email           String
+  phone           String      @default("")
+  /// "pending" (wacht op betaling) | "paid" | "shipped" | "completed" | "cancelled" | "refunded"
+  status          String      @default("pending")
+  /// "open" | "paid" | "failed" | "expired" | "canceled" | "refunded" | "partially_refunded"
+  paymentStatus   String      @default("open")
+  /// "mollie" | "simulatie" | "overboeking"
+  paymentProvider String      @default("mollie")
+  /// gekozen betaalmethode, bv. "ideal"
+  paymentMethod   String      @default("")
+  /// id van de betaling bij Mollie (tr_…)
+  paymentId       String?
+  /// { firstName, lastName, company, street, houseNumber, addition, postalCode, city, country }
+  shippingAddress String
+  billingAddress  String
+  shippingMethod  String      @default("standaard")
+  items           OrderItem[]
+  subtotal        Int
+  shippingCost    Int         @default(0)
+  discountCode    String?
+  discountAmount  Int         @default(0)
+  total           Int
+  /// btw-bedrag dat in het totaal zit
+  vatAmount       Int         @default(0)
+  refundedAmount  Int         @default(0)
+  note            String      @default("")
+  /// interne notitie (alleen beheer)
+  adminNote       String      @default("")
+  trackingCode    String?
+  trackingUrl     String?
+  /// voorraad is afgeboekt (één keer, bij de eerste "paid")
+  stockBooked     Boolean     @default(false)
+  /// e-mails die al verstuurd zijn: ["bevestiging","verzonden","geannuleerd"]
+  mailsSent       String      @default("[]")
+  paidAt          DateTime?
+  shippedAt       DateTime?
+  cancelledAt     DateTime?
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+
+  @@index([createdAt])
+  @@index([status])
+  @@index([customerId])
+  @@index([paymentId])
+}
+
+model OrderItem {
+  id          String  @id @default(cuid())
+  orderId     String
+  order       Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId   String?
+  variantId   String?
+  /// momentopname op het moment van bestellen
+  name        String
+  variantName String  @default("")
+  sku         String  @default("")
+  image       String  @default("")
+  path        String  @default("")
+  unitPrice   Int
+  quantity    Int
+  vatRate     Int     @default(21)
+  total       Int
+
+  @@index([orderId])
+}
+
+/// Kortingscode voor de winkelwagen.
+model Discount {
+  id         String    @id @default(cuid())
+  code       String    @unique
+  /// "percent" | "fixed" | "shipping" (gratis verzending)
+  type       String    @default("percent")
+  /// percentage (10 = 10%) of bedrag in centen
+  value      Int       @default(0)
+  /// minimaal orderbedrag in centen
+  minOrder   Int       @default(0)
+  usageLimit Int?
+  used       Int       @default(0)
+  startsAt   DateTime?
+  endsAt     DateTime?
+  active     Boolean   @default(true)
+  createdAt  DateTime  @default(now())
+}
+
+/// Nieuwsbriefaanmeldingen (footer).
+model Subscriber {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  source    String   @default("footer")
+  createdAt DateTime @default(now())
+}
+
+// ---------- blog ----------
+
+model BlogCategory {
+  id    String @id @default(cuid())
+  slug  String @unique
+  name  String
+  posts Post[]
+}
+
+/// Blogartikel. Publiek: /blog/<slug>/.
+model Post {
+  id              String        @id @default(cuid())
+  slug            String        @unique
+  /// altijd "/blog/<slug>/"
+  path            String        @unique
+  title           String
+  excerpt         String        @default("")
+  /// artikeltekst (HTML)
+  content         String        @default("")
+  image           String?
+  imageAlt        String        @default("")
+  categoryId      String?
+  category        BlogCategory? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  /// ["winterstalling","reinigen"]
+  tags            String        @default("[]")
+  authorName      String        @default("BluePure Marine")
+  /// "draft" | "scheduled" | "published"
+  status          String        @default("published")
+  noindex         Boolean       @default(false)
+  metaTitle       String?
+  metaDescription String?
+  publishedAt     DateTime      @default(now())
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  deletedAt       DateTime?
+
+  @@index([status, publishedAt])
+}

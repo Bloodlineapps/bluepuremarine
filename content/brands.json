@@ -1,0 +1,170 @@
+[
+  {
+    "slug": "bluepure-marine",
+    "name": "BluePure Marine",
+    "sourceVendor": "BluePure Marine",
+    "logo": "/logo.svg",
+    "count": 20,
+    "sortOrder": 10
+  },
+  {
+    "slug": "harken",
+    "name": "Harken",
+    "sourceVendor": "Harken",
+    "logo": "/brands/harken.svg",
+    "count": 9,
+    "sortOrder": 20
+  },
+  {
+    "slug": "lewmar",
+    "name": "Lewmar",
+    "sourceVendor": "Lewmar",
+    "logo": "/brands/lewmar.svg",
+    "count": 4,
+    "sortOrder": 30
+  },
+  {
+    "slug": "vetus",
+    "name": "Vetus",
+    "sourceVendor": "Vetus",
+    "logo": "/brands/vetus.svg",
+    "count": 3,
+    "sortOrder": 40
+  },
+  {
+    "slug": "quick",
+    "name": "Quick",
+    "sourceVendor": "Quick",
+    "logo": "/brands/quick.png",
+    "count": 2,
+    "sortOrder": 50
+  },
+  {
+    "slug": "garmin",
+    "name": "Garmin",
+    "sourceVendor": "Garmin",
+    "logo": "/brands/garmin.svg",
+    "count": 1,
+    "sortOrder": 60
+  },
+  {
+    "slug": "furuno",
+    "name": "Furuno",
+    "sourceVendor": "Furuno",
+    "logo": "/brands/furuno.svg",
+    "count": 3,
+    "sortOrder": 70
+  },
+  {
+    "slug": "mercury",
+    "name": "Mercury",
+    "sourceVendor": "Mercury",
+    "logo": "/brands/mercury.svg",
+    "count": 3,
+    "sortOrder": 80
+  },
+  {
+    "slug": "volvo-penta",
+    "name": "Volvo Penta",
+    "sourceVendor": "Volvo Penta",
+    "logo": "/brands/volvo-penta.svg",
+    "count": 2,
+    "sortOrder": 90
+  },
+  {
+    "slug": "antal",
+    "name": "Antal",
+    "sourceVendor": "Antal",
+    "logo": null,
+    "count": 2,
+    "sortOrder": 100
+  },
+  {
+    "slug": "decktent",
+    "name": "Decktent",
+    "sourceVendor": "Decktent",
+    "logo": null,
+    "count": 16,
+    "sortOrder": 110
+  },
+  {
+    "slug": "ecstasea",
+    "name": "Ecstasea",
+    "sourceVendor": "Ecstasea",
+    "logo": null,
+    "count": 1,
+    "sortOrder": 120
+  },
+  {
+    "slug": "jabsco",
+    "name": "Jabsco",
+    "sourceVendor": "Jabsco",
+    "logo": null,
+    "count": 1,
+    "sortOrder": 130
+  },
+  {
+    "slug": "johnson-pump",
+    "name": "Johnson Pump",
+    "sourceVendor": "Johnson Pump",
+    "logo": null,
+    "count": 2,
+    "sortOrder": 140
+  },
+  {
+    "slug": "maxwell",
+    "name": "Maxwell",
+    "sourceVendor": "Maxwell",
+    "logo": null,
+    "count": 1,
+    "sortOrder": 150
+  },
+  {
+    "slug": "navico",
+    "name": "Navico",
+    "sourceVendor": "Navico",
+    "logo": null,
+    "count": 1,
+    "sortOrder": 160
+  },
+  {
+    "slug": "radio-zeeland",
+    "name": "Radio Zeeland",
+    "sourceVendor": "Radio Zeeland",
+    "logo": null,
+    "count": 1,
+    "sortOrder": 170
+  },
+  {
+    "slug": "sailor",
+    "name": "Sailor",
+    "sourceVendor": "Sailor",
+    "logo": null,
+    "count": 1,
+    "sortOrder": 180
+  },
+  {
+    "slug": "side-power",
+    "name": "Side-Power",
+    "sourceVendor": "Side-Power",
+    "logo": null,
+    "count": 1,
+    "sortOrder": 190
+  },
+  {
+    "slug": "ultraflex",
+    "name": "Ultraflex",
+    "sourceVendor": "Ultraflex",
+    "logo": null,
+    "count": 1,
+    "sortOrder": 200
+  },
+  {
+    "slug": "overig",
+    "name": "Overige merken",
+    "sourceVendor": "Overig",
+    "logo": null,
+    "count": 9,
+    "sortOrder": 210
+  }
+]

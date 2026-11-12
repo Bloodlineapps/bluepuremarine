@@ -1,0 +1,128 @@
+[
+  {
+    "category": "Bestellen & betalen",
+    "anchor": "betaalmethoden",
+    "question": "Welke betaalmethoden kan ik gebruiken?",
+    "answer": "<p>Je betaalt veilig met iDEAL, Bancontact, creditcard (Visa, Mastercard, Maestro en American Express), Apple Pay en PayPal.</p><p>Liever achteraf betalen? Dat kan met Klarna.</p>",
+    "sortOrder": 10
+  },
+  {
+    "category": "Bestellen & betalen",
+    "anchor": "prijzen-inclusief-btw",
+    "question": "Zijn de prijzen inclusief btw?",
+    "answer": "<p>Ja. De prijzen in onze webwinkel zijn inclusief btw, tenzij er uitdrukkelijk iets anders staat. Eventuele verzendkosten zie je voordat je je bestelling afrondt.</p>",
+    "sortOrder": 20
+  },
+  {
+    "category": "Bestellen & betalen",
+    "anchor": "orderbevestiging",
+    "question": "Krijg ik een bevestiging van mijn bestelling?",
+    "answer": "<p>Ja. Na het plaatsen van je bestelling ontvang je een orderbevestiging per e-mail. Zodra je bestelling is verzonden, krijg je automatisch een tweede e-mail met een overzicht van de verzonden artikelen.</p><p>Geen e-mail ontvangen? Kijk even in je spammap of neem contact met ons op.</p>",
+    "sortOrder": 30
+  },
+  {
+    "category": "Verzending & levering",
+    "anchor": "wanneer-verzonden",
+    "question": "Wanneer wordt mijn bestelling verzonden?",
+    "answer": "<p>Na ontvangst en verwerking van je bestelling verpakken we hem zorgvuldig en verzenden we hem zo snel mogelijk. Hoe snel dat is, verschilt per product.</p><p>Heb je je bestelling op een bepaald moment nodig? Neem dan vooraf even contact met ons op, dan kijken we wat er mogelijk is.</p>",
+    "sortOrder": 40
+  },
+  {
+    "category": "Verzending & levering",
+    "anchor": "verzendkosten",
+    "question": "Wat zijn de verzendkosten?",
+    "answer": "<p>De verzendkosten zie je in je winkelwagen en bij het afrekenen, voordat je je bestelling afrondt. Zo weet je altijd vooraf waar je aan toe bent.</p>",
+    "sortOrder": 50
+  },
+  {
+    "category": "Verzending & levering",
+    "anchor": "pakket-volgen",
+    "question": "Kan ik mijn pakket volgen?",
+    "answer": "<p>Zodra je bestelling is verzonden, ontvang je automatisch een e-mail met een overzicht van de verzonden artikelen. Waar mogelijk kun je je zending daarna volgen.</p>",
+    "sortOrder": 60
+  },
+  {
+    "category": "Retourneren & klachten",
+    "anchor": "retour-aanmelden",
+    "question": "Hoe stuur ik een product retour?",
+    "answer": "<ol><li><strong>Aanmelden. </strong>Meld je retour vooraf aan via onze klantenservice, met je ordernummer. Zonder aanmelding kunnen we een retour niet in behandeling nemen.</li><li><strong>Verpakken. </strong>Verpak het product zorgvuldig, bij voorkeur in de originele verpakking, compleet met alle toebehoren en documentatie.</li><li><strong>Verzenden. </strong>Na je aanmelding krijg je de instructies. Verstuur de retour binnen 7 werkdagen. De retourzending is voor risico van de verzender, tenzij we schriftelijk iets anders afspreken.</li><li><strong>Verwerking. </strong>Na ontvangst en controle verwerken we je retour en verrekenen we het bedrag volgens onze voorwaarden.</li></ol>",
+    "sortOrder": 70
+  },
+  {
+    "category": "Retourneren & klachten",
+    "anchor": "bedenktijd",
+    "question": "Hoe lang heb ik bedenktijd?",
+    "answer": "<p>Als consument heb je 14 dagen bedenktijd vanaf het moment dat je je bestelling ontvangt. Wil je een product terugsturen? Meld de retour binnen die termijn bij ons aan.</p>",
+    "sortOrder": 80
+  },
+  {
+    "category": "Retourneren & klachten",
+    "anchor": "klacht-of-beschadigd",
+    "question": "Wat als mijn bestelling beschadigd is of niet klopt?",
+    "answer": "<p>Vervelend! Meld het ons zo snel mogelijk, uiterlijk binnen 7 dagen na levering. Stuur je ordernummer mee en, als dat kan, een foto van het product of de verpakking. Dan zoeken we samen naar een oplossing.</p>",
+    "sortOrder": 90
+  },
+  {
+    "category": "Producten & gebruik",
+    "anchor": "gebruik-buitenkant",
+    "question": "Hoe gebruik ik de reinigers aan de buitenkant van mijn boot?",
+    "answer": "<p><strong>Emmermethode: </strong>voeg de aanbevolen hoeveelheid reiniger toe aan een emmer water en meng goed. Breng het aan met een borstel of spons, laat het enkele minuten inwerken (maximaal 5 minuten), borstel het oppervlak grondig en spoel ruim af met schoon water.</p><p><strong>Spraymethode: </strong>spray de reiniger direct op het oppervlak, laat het maximaal 5 minuten inwerken, borstel en spoel grondig af met schoon water.</p><p>Laat het product tijdens het inwerken nooit opdrogen.</p>",
+    "sortOrder": 100
+  },
+  {
+    "category": "Producten & gebruik",
+    "anchor": "gebruik-interieur",
+    "question": "Hoe reinig ik het interieur?",
+    "answer": "<p>Spray de reiniger gelijkmatig op het oppervlak en werk het in met een BluePure-kwast, met extra aandacht voor naden, hoeken en details. Neem het daarna af met een schone, droge microvezeldoek. Bij hardnekkig vuil kun je de behandeling herhalen.</p>",
+    "sortOrder": 110
+  },
+  {
+    "category": "Producten & gebruik",
+    "anchor": "aandachtspunten",
+    "question": "Waar moet ik op letten bij het reinigen?",
+    "answer": "<ul><li>Test het product altijd eerst op een onopvallende plek.</li><li>Gebruik het niet in direct zonlicht of op hete oppervlakken.</li><li>Laat het product tijdens de inwerktijd nooit opdrogen.</li><li>Vermijd onnodig contact met ogen en huid.</li></ul>",
+    "sortOrder": 120
+  },
+  {
+    "category": "Producten & gebruik",
+    "anchor": "biologisch-afbreekbaar",
+    "question": "Zijn de producten veilig en biologisch afbreekbaar?",
+    "answer": "<p>Onze reinigers zijn biologisch afbreekbaar volgens de geldende normen en ontwikkeld om krachtig te reinigen zonder het oppervlak aan te tasten. Ze zijn veilig in gebruik als je de gebruiksinstructies volgt.</p><p>Voor uitgebreide veiligheids- en gebruiksvoorschriften kun je het veiligheidsinformatieblad (VIB) bij ons opvragen.</p>",
+    "sortOrder": 130
+  },
+  {
+    "category": "Producten & gebruik",
+    "anchor": "bewaren",
+    "question": "Hoe bewaar ik de producten?",
+    "answer": "<ul><li>Op kamertemperatuur, op een koele en droge plek.</li><li>Beschermd tegen direct zonlicht en vorst.</li><li>Met de verpakking goed afgesloten als je het product niet gebruikt.</li><li>Buiten bereik van kinderen.</li></ul>",
+    "sortOrder": 140
+  },
+  {
+    "category": "Onderdelen & advies",
+    "anchor": "past-onderdeel",
+    "question": "Hoe weet ik of een onderdeel op mijn boot past?",
+    "answer": "<p>Niet elk onderdeel past op elke boot. Stuur ons het merk en type van je boot, of een foto van het onderdeel dat je wilt vervangen, en we zoeken met je mee.</p>",
+    "sortOrder": 150
+  },
+  {
+    "category": "Onderdelen & advies",
+    "anchor": "contact-opnemen",
+    "question": "Hoe kan ik contact met jullie opnemen?",
+    "answer": "<ul><li><strong>Telefoon en WhatsApp: </strong><a href=\"tel:+31611791623\">+31 6 11791623</a></li><li><strong>E-mail: </strong><a href=\"mailto:info@bluepuremarine.com\">info@bluepuremarine.com</a></li></ul><p>We proberen je vraag zo snel mogelijk te beantwoorden.</p>",
+    "sortOrder": 160
+  },
+  {
+    "category": "Over BluePure Marine",
+    "anchor": "wie-is-bluepure",
+    "question": "Wie is BluePure Marine?",
+    "answer": "<p>BluePure Marine heeft jarenlange ervaring met het professioneel reinigen en onderhouden van boten en jachten. Die kennis zit in onze eigen reinigingslijn: middelen die getest zijn in zout water, zon en dagelijks gebruik.</p><p>Daarnaast leveren we onderdelen, elektronica en watersportartikelen, met persoonlijk advies als je twijfelt wat past.</p>",
+    "sortOrder": 170
+  },
+  {
+    "category": "Over BluePure Marine",
+    "anchor": "waar-zitten-jullie",
+    "question": "Waar zitten jullie?",
+    "answer": "<p>BluePure Marine zit aan de Herman Boerhaavestraat 18, 5165 EG Waspik.</p><p>KvK: 42077731, btw: NL005476895B23.</p>",
+    "sortOrder": 180
+  }
+]

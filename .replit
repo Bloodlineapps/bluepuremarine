@@ -1,0 +1,22 @@
+modules = ["nodejs-20", "postgresql-16"]
+
+# Ontwikkelen in de Replit-workspace: schema bijwerken, database vullen als hij leeg is, dan de dev-server.
+run = "npm run db:setup && npm run dev"
+
+[nix]
+channel = "stable-24_05"
+
+[env]
+PORT = "3800"
+NEXT_TELEMETRY_DISABLED = "1"
+
+[deployment]
+deploymentTarget = "autoscale"
+# Build: Prisma-client, schema (db push), content seeden als de database leeg is, next build.
+build = ["sh", "-c", "npm ci && npm run build:replit"]
+# Start: next start op 0.0.0.0:3800 — de homepage (/) is vooraf gerenderd en antwoordt direct met 200.
+run = ["sh", "-c", "npm start"]
+
+[[ports]]
+localPort = 3800
+externalPort = 80
