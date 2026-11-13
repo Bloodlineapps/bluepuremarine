@@ -26,7 +26,20 @@ Dit is een **kant-en-klare Next.js 15-app (App Router) met Prisma**. Hij draait 
 
 ## Eerste beheerder aanmaken
 
-In de Shell: `node scripts/create-admin.mjs naam@domein.nl "Volledige naam"` en typ het wachtwoord in (rol superadmin;
+**Via een eenmalige link (ook op productie, zonder Shell):**
+
+1. Voeg de secret `SETUP_TOKEN` toe met een willekeurige waarde van minimaal 24 tekens. Zet hem bij de secrets van
+   de deployment (productie) en eventueel ook bij die van de workspace (development); dat zijn aparte databases.
+2. Publiceer opnieuw, zodat de secret actief is.
+3. Open `https://<domein>/admin/setup/?token=<waarde van SETUP_TOKEN>`, vul e-mailadres, naam en wachtwoord in.
+   Je bent daarna ingelogd als superadmin. Bestaat het e-mailadres al, dan krijgt dat account het nieuwe wachtwoord
+   en de rol superadmin.
+4. De link werkt daarna nooit meer (ook niet met dezelfde secret). Verwijder de secret `SETUP_TOKEN` weer.
+
+Zonder `SETUP_TOKEN`, met een fout token of na gebruik geeft de pagina een 404. Wachtwoord kwijt: zet een nieuwe
+waarde in `SETUP_TOKEN` en gebruik de link opnieuw.
+
+**Of in de Shell:** `node scripts/create-admin.mjs naam@domein.nl "Volledige naam"` en typ het wachtwoord in (rol superadmin;
 met `--role=admin` of `--role=user` een andere rol). Inloggen op `/admin/`.
 
 Rollen: **superadmin** (alles), **admin** (alles, inclusief Connecties), **user** (alles zien, aanpassen en

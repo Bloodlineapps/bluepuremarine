@@ -35,7 +35,8 @@ export async function middleware(req: NextRequest) {
       url.pathname = `${pathname}/`;
       return NextResponse.redirect(url, 301);
     }
-    if (pathname.startsWith("/admin/login/")) return NextResponse.next();
+    // Login en de eenmalige setup-link (controleert zelf het token uit SETUP_TOKEN) zijn zonder sessie bereikbaar
+    if (pathname.startsWith("/admin/login/") || pathname === "/admin/setup/") return NextResponse.next();
     const session = await verifySession(req.cookies.get(SESSION_COOKIE)?.value);
     if (!session) {
       url.pathname = "/admin/login/";
